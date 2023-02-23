@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.215.157.179:9980/kalyantechnologies/repository/Axisbank-release/</url>
+	      <url>http://18.143.157.207:9980/kalyantechnologies/repository/Axisbank-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.215.157.179:9980/kalyantechnologies/repository/Axisbank-snapshot/</url>
+	      <url>http://18.143.157.207:9980/kalyantechnologies/repository/Axisbank-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
