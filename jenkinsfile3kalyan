@@ -12,7 +12,7 @@ def mavenHome = tool name: "maven3.8.7"
 stage('Checkoutcode'){
 git branch: 'development', url: 'https://github.com/kalyancloud/maven-web-application.git'
 }
-
+try{
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
@@ -33,3 +33,15 @@ stage('DeployAppIntoTomcatServer'){
 }
 */
 }
+
+
+}
+catch(e){
+currentBuild.result = "FAILED"
+ throw e
+  } 
+  finally {
+    sendSlackNotifications(currentBuild.result)
+  }
+
+}//node closing
